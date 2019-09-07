@@ -57,13 +57,8 @@ class Trie:
 				T = T[c]
 			else:
 				return []
-		findings = []		
-		for k in T:
-			endings = autocomplete(T[k],k)
-			for ending in endings:
-				findings.append(word+ending)
-		return findings
-	
+		return autocomplete(T,word)
+
 	# TODO: make a helpful representation of Trie
 	def __repr__(self):
 		return self.T

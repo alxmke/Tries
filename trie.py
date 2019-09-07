@@ -74,6 +74,7 @@ if __name__ == '__main__':
 		(('bat', False), T.search('bar')),
 		(('', False), S.search('car')),
 		(set(['cat', 'catch', 'car', 'cash', 'cast', 'ca', 'capricorn']), set(T.autocompletions('ca'))),
+		([], T.autocompletions('X')),
 		([], S.autocompletions('ca')),
 	]
 	failed = 0
